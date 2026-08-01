@@ -20,14 +20,44 @@
           id="name"
           placeholder="enter your full name"
         /><br /><br />
-        <label>Patient ID</label><br>
-        <input type="password" id="pid" placeholder="your secert ID"><br><br>
-        
-        <label>Date of birth</label><br>
-        <input type="date" id="bob"><br>
-        
+        <label>Patient ID</label><br />
+        <input
+          type="password"
+          id="pid"
+          placeholder="your secert ID"
+        /><br /><br />
+
+        <label>Date of birth</label><br />
+        <input type="date" id="bob" /><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Your visit</legend>
+
+        <label>chose your doctor</label><br />
+        <select id="doctor">
+          <option value="">--Select a doctor--</option>
+          <option value="dr-ray">Dr Ray - general</option>
+          <option></option>
+          <option value="dr-lee">Dr Lee -Teeth</option>
+          <option value="dr-sam">Dr sam -eyes</option></select
+        ><br /><br />
+        <label>Why are you visiting ?</label><br />
+        <input type="radio" name="reason" value="fever" /> Fever<br />
+        <input type="radio" name="reason" value="cold" /> Cold<br />
+        <input type="radio" name="reason" value="tooth" /> Tooth Pain<br />
+
+        <label>Any note for the Doctor</label><br />
+        <textarea
+          id="note"
+          row="3"
+          cols="35"
+          placeholder="e.g I have had sore throat for two days."
+        ></textarea
+        ><br />
       </fieldset>
     </form>
   </body>
 </html>
-
